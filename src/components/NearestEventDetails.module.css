@@ -1,7 +1,7 @@
 .nearestEventDetails{
     height: min-content;
     width: 80%;
-    background-color: antiquewhite;
+    background-color: rgb(210, 223, 239);
     padding: .5rem;
     margin: .5rem;
     border-radius: .5rem;

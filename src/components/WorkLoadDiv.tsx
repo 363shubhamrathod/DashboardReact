@@ -7,16 +7,12 @@ export default function WorkLoadDiv() {
   return (
     <div className={classes.WorkLoadDiv}>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <h3>Workload</h3>
+        <h2>Workload</h2>
         <h4>
           <button>View All</button>
         </h4>
       </div>
       <div className={classes.WorkLoadDivCardBox}>
-        <WorkLoadDivCardBox />
-        <WorkLoadDivCardBox />
-        <WorkLoadDivCardBox />
-        <WorkLoadDivCardBox />
         <WorkLoadDivCardBox />
         <WorkLoadDivCardBox />
         <WorkLoadDivCardBox />

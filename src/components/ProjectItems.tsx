@@ -3,7 +3,7 @@ import classes from "./ProjectItems.module.css";
 export default function ProjectItems() {
   return (
     <div className={classes.projectItems}>
-      <div style={{borderRightWidth:"10px solid black"}}>
+      <div>
         <div style={{ display: "flex", flexDirection: "row", }}>
           <div>
             <Image />
@@ -17,6 +17,9 @@ export default function ProjectItems() {
             <div><Calendar/> Created At May 12,2020</div>
             <div><ArrowUp/> Medium</div>
         </div>
+      </div>
+      <div style={{height:"100%", border:"1px solid"}}>
+
       </div>
       <div>
         <h4>Project Data</h4>

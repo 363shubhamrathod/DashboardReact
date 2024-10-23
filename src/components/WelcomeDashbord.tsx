@@ -10,7 +10,7 @@ export default function WelcomeDashbord() {
         <div>
           <h2>Dashboard</h2>
         </div>
-        <div style={{alignItems:"center"}}>
+        <div style={{alignItems:"center" ,backgroundColor:"rgb(220, 228,241)",padding:".5rem",borderRadius:".5rem"}}>
           <CalendarMinus2 />
           Nov 16,2023-Dec 16,2023
         </div>
