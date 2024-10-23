@@ -1,0 +1,55 @@
+.navBar{
+    width: min-content;
+    margin: .5rem;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navBarContentBox{
+    width: 100%;
+    height: min-content;
+    align-self: center;
+    margin: .5rem;
+    border-radius: 1rem;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.neavigationMenu{
+    margin: .25rem;
+    padding: .25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: min-content;
+}
+
+.neavigationMenuItems{
+    margin: .25rem;
+    padding: .25rem;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.neavigationMenuItems button{
+    font-size: medium;
+    background-color: transparent;
+    text-align: center;
+    border-width: 0px;
+}
+
+.neavigationMenuItems button:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+.neavigationMenuItems .Active{
+    color: blue;
+}

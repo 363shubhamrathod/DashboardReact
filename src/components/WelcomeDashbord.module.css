@@ -1,0 +1,19 @@
+.MainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: min-content;
+    align-items: self-start;
+    margin: 1rem;
+}
+.welcomeText{
+    padding: .5rem;
+}
+
+.heading{
+    padding: .5rem;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}

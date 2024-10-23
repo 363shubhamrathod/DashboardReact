@@ -1,0 +1,12 @@
+.WorkLoadDivCard{
+    height: 10rem;
+    width: 8rem;
+    background-color: antiquewhite;
+    padding: .25rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

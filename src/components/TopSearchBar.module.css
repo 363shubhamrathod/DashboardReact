@@ -1,0 +1,29 @@
+.MainDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: min-content;
+    align-items: center;
+}
+
+.searchInput{
+    background-color: transparent;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.SideDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.RightSmallBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .25rem;
+    align-items: center;
+    background-color: beige;
+    border-radius: .25rem;
+}

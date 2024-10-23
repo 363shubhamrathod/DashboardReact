@@ -1,0 +1,11 @@
+.nearestEventDetails{
+    height: min-content;
+    width: 80%;
+    background-color: antiquewhite;
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

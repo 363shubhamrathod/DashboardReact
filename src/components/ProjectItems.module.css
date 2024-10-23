@@ -1,0 +1,10 @@
+.projectItems{
+    margin: .5rem;
+    height: 6rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

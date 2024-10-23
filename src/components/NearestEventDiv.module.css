@@ -1,0 +1,12 @@
+.nearestEvent{
+    background-color: aquamarine;
+    width: 25%;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+    padding: .5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+

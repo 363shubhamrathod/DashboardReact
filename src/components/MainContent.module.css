@@ -1,0 +1,8 @@
+.mainContent{
+    margin: 1rem;
+    width: 70%;
+    align-content: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}

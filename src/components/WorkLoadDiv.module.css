@@ -1,0 +1,17 @@
+.WorkLoadDiv{
+    background-color: aquamarine;
+    width: 70%;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.WorkLoadDivCardBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
