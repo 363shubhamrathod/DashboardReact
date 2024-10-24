@@ -3,65 +3,72 @@ import {
   FolderOpen,
   Layers,
   LayoutDashboard,
+  LogOut,
   MessageCircle,
   Plane,
   UsersRound,
 } from "lucide-react";
 import LogoSVG from "./LogoSvg";
 import classes from "./SideNavBar.module.css";
+
 export default function SideNavBar() {
   return (
     <div className={classes.navBar}>
       <div className={classes.navBarContentBox}>
-        <div>
+        <div className={classes.logoContainer}>
           <LogoSVG />
         </div>
-        <div className={classes.neavigationMenu}>
-          <div className={classes.neavigationMenuItems}>
-            <div>
-              <button>
-                <LayoutDashboard /> 
-                <h5>Dashboard</h5>
-              </button>
-            </div>
-            <div
-              style={{ width: "4px", height: "100%", backgroundColor: "blue" }}
-            ></div>
-          </div>
-          <div className={classes.neavigationMenuItems}>
+        <div className={classes.navigationMenu}>
+          <div className={`${classes.navigationMenuItem} ${classes.active}`}>
             <button>
-              <Layers /> <h5>Projects</h5>
+              <LayoutDashboard />
+              <h5>Dashboard</h5>
+            </button>
+            <div className={classes.sideBarIndicator}></div> {/* Blue bar */}
+          </div>
+          <div className={classes.navigationMenuItem}>
+            <button>
+              <Layers />
+              <h5>Projects</h5>
             </button>
           </div>
-          <div className={classes.neavigationMenuItems}>
+          <div className={classes.navigationMenuItem}>
             <button>
-              <Calendar /> <h5>Projects</h5>
+              <Calendar />
+              <h5>Calendar</h5>
             </button>
           </div>
-          <div className={classes.neavigationMenuItems}>
-            {" "}
+          <div className={classes.navigationMenuItem}>
             <button>
-              <Plane /> <h5>Vacations</h5>
+              <Plane />
+              <h5>Vacations</h5>
             </button>
           </div>
-          <div className={classes.neavigationMenuItems}>
+          <div className={classes.navigationMenuItem}>
             <button>
-              <UsersRound /> <h5>employees</h5>
+              <UsersRound />
+              <h5>Employees</h5>
             </button>
           </div>
-          <div className={classes.neavigationMenuItems}>
+          <div className={classes.navigationMenuItem}>
             <button>
-              <MessageCircle /><h5>employees</h5>
+              <MessageCircle />
+              <h5>Messages</h5>
             </button>
           </div>
-          <div className={classes.neavigationMenuItems}>
+          <div className={classes.navigationMenuItem}>
             <button>
-              <FolderOpen /> <h5>Info Potal</h5>
+              <FolderOpen />
+              <h5>Info Portal</h5>
             </button>
           </div>
         </div>
-        <div></div>
-        {/* <div>other misselious options</div> */}
+        <div className={classes.logoutContainer}>
+          <button className={classes.logoutButton}>
+            <LogOut className={classes.logoutIcon} />
+            <h5>Logout</h5>
+          </button>
+        </div>
       </div>
     </div>
   );

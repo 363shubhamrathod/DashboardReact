@@ -1,16 +1,12 @@
 import classes from "./WorkLoadDiv.module.css";
 import WorkLoadDivCardBox from "./WorkLoadDivCardBox";
 
-
-
 export default function WorkLoadDiv() {
   return (
     <div className={classes.WorkLoadDiv}>
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div className={classes.header}>
         <h2>Workload</h2>
-        <h4>
-          <button>View All</button>
-        </h4>
+        <button className={classes.viewAllButton}>View All</button>
       </div>
       <div className={classes.WorkLoadDivCardBox}>
         <WorkLoadDivCardBox />

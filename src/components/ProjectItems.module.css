@@ -1,10 +1,94 @@
-.projectItems{
-    margin: .5rem;
-    height: 6rem;
-    background-color: rgb(220, 228, 241);
-    border-radius: 1rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.projectItems {
+  margin: 0.5rem;
+  height: 8rem;
+  background-color: rgb(220, 228, 241);
+  border-radius: 1rem;
+  display: flex;
+  align-items: stretch; /* Stretch items to fill height */
+}
+
+.projectInfo {
+  flex: 1; /* Takes up 50% of the width */
+  padding: 1rem; /* Add padding for better spacing */
+  display: flex;
+  flex-direction: column; /* Stack header and details */
+  justify-content: center; /* Center the content vertically */
+}
+
+.projectHeader {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.projectIcon {
+  margin-right: 0.5rem; /* Space between icon and title */
+}
+
+.projectTitle {
+  display: flex;
+  flex-direction: column; /* Stack the title vertically */
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* Space between details */
+  margin-top: 0.5rem; /* Space above details */
+}
+
+.projectDetail {
+  display: flex;
+  align-items: center; /* Align icon and text */
+  width: 50%; /* Limit width to 50% */
+}
+
+.detailIcon {
+  margin-right: 0.25rem; /* Space between icon and text */
+}
+
+/* New class for gray date text */
+.dateText {
+  color: gray; /* Set text color to gray */
+}
+
+.separator {
+  width: 2px; /* Width of the vertical line */
+  background-color: gray; /* Color for the separator */
+}
+
+.projectData {
+  flex: 1; /* Takes up 50% of the width */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem; /* Add padding for better spacing */
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* Space between data items */
+  margin-top: 0.5rem; /* Space above data items */
+}
+
+.dataItem {
+  text-align: center; /* Center text within each item */
+  flex: 1; /* Ensure each item takes equal space */
+}
+
+/* Styling for assignees */
+.assigneeContainer {
+  display: flex;
+  align-items: center; /* Center the images */
+  gap: 0.5rem; /* Space between images and plus sign */
+}
+
+.assigneeImage {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  border-radius: 50%; /* Make the images circular */
+}
+
+.plusSign {
+  font-weight: bold; /* Make the plus sign bold */
+  color: gray; /* Optional: change color to match the theme */
 }

@@ -1,13 +1,29 @@
-.projectItems{
-    margin: .5rem;
-    height: 6rem;
-    background-color: rgb(220, 228,241);
-    border-radius: 1rem;
-    padding: 1rem;
-}
-.MainDiv{
+.MainDiv {
     width: 70%;
     border-radius: 1rem;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent; /* Ensure the background remains unchanged */
+  }
+  
+  .header {
+    display: flex;
     justify-content: space-between;
-}
+    align-items: center; /* Center items vertically */
+    margin-bottom: 1rem; /* Add space below the header */
+  }
+  
+  .viewAllButton {
+    background-color: transparent;
+    border: none;
+    color: blue;
+    cursor: pointer;
+    font-weight: 500; /* Slightly emphasize the button */
+    transition: color 0.3s;
+  }
+  
+  .viewAllButton:hover {
+    color: darkblue; /* Darken the button color on hover */
+  }
+  

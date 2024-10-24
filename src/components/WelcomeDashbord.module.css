@@ -1,19 +1,38 @@
-.MainDiv{
+.MainDiv {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: min-content;
-    align-items: self-start;
-    margin: 1rem;
-}
-.welcomeText{
-    padding: .5rem;
-}
-
-.heading{
-    padding: .5rem;
+    align-items: flex-start; /* Align items to the start */
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+  }
+  
+  .welcomeText {
+    padding: 0.25rem 0; /* Vertical padding for spacing */
+    color: #333; /* Dark color for readability */
+  }
+  
+  .heading {
+    padding: 0.5rem 0;
     display: flex;
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    justify-content: space-between; /* Space between title and date */
+    align-items: center; /* Center align items vertically */
+  }
+  
+  .dateContainer {
+    display: flex;
+    align-items: center; /* Center icon and text vertically */
+    background-color: rgb(220, 228, 241);
+    padding: 0.5rem 1rem; /* Add horizontal padding for spacing */
+    border-radius: 0.5rem;
+    font-weight: 500; /* Slightly bolder text for emphasis */
+    color: #555; /* Darker gray for secondary information */
+  }
+  
+  .calendarIcon {
+    margin-right: 0.5rem; /* Space between icon and text */
+    color: #888; /* Subtle color for the icon */
+    font-size: 1.2rem; /* Slightly larger icon */
+  }
+  

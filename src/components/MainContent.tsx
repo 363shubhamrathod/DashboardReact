@@ -3,34 +3,19 @@ import classes from "./MainContent.module.css";
 import NearestEventDiv from "./NearestEventDiv";
 import ProjectsDiv from "./ProjectsDiv";
 import TopSearchBar from "./TopSearchBar";
-import WelcomeDashbord from "./WelcomeDashbord";
+import WelcomeDashboard from "./WelcomeDashbord"; // Fixed spelling
 import WorkLoadDiv from "./WorkLoadDiv";
 
 export default function MainContent() {
   return (
     <div className={classes.mainContent}>
       <TopSearchBar />
-      <WelcomeDashbord />
-      <div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-          }}
-        >
-          <WorkLoadDiv />
-          <NearestEventDiv />
-        </div>
+      <WelcomeDashboard />
+      <div className={classes.flexContainer}>
+        <WorkLoadDiv />
+        <NearestEventDiv />
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          margin:"2rem"
-        }}
-      >
+      <div className={classes.flexContainer}>
         <ProjectsDiv />
         <ActivityStream />
       </div>

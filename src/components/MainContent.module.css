@@ -1,8 +1,74 @@
-.mainContent{
-    margin: 1rem;
-    width: 80%;
-    align-content: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+/* MainContent.module.css */
+.mainContent {
+  margin: 1rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Space between elements */
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Space between child components */
+  gap: 1.5rem; /* Space between child components */
+  align-items: stretch; /* Allow items to stretch to the same height */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .mainContent {
+    width: 95%; /* Adjust width for smaller screens */
+  }
+
+  .flexContainer {
+    flex-direction: column; /* Stack components on small screens */
+  }
+}
+
+/* ProjectsDiv.module.css */
+.MainDiv {
+  width: 70%;
+  border-radius: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+  min-height: 400px; /* Set a minimum height */
+  background-color: white; /* Keep the background unchanged */
+}
+
+/* ActivityStream.module.css */
+.MainDiv {
+  background-color: rgb(220, 228, 241);
+  width: 25%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  justify-content: space-between;
+  min-height: 400px; /* Set a minimum height */
+}
+
+/* WorkLoadDiv.module.css */
+.WorkLoadDiv {
+  background-color: rgb(220, 228, 241);
+  width: 70%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  justify-content: space-between;
+  min-height: 400px; /* Set a minimum height */
+}
+
+/* NearestEventDiv.module.css */
+.nearestEvent {
+  background-color: rgb(220, 228, 241);
+  width: 25%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 400px; /* Set a minimum height */
 }

@@ -1,15 +1,14 @@
 import ProjectItems from "./ProjectItems";
 import classes from "./ProjectsDiv.module.css";
+
 export default function ProjectsDiv() {
   return (
     <div className={classes.MainDiv}>
-      <div style={{ display: "flex", justifyContent: "space-between"  }}>
+      <div className={classes.header}>
         <h3>Projects</h3>
-        <h4>
-          <button>View All</button>
-        </h4>
+        <button className={classes.viewAllButton}>View All</button>
       </div>
-      <ProjectItems/>
+      <ProjectItems />
     </div>
   );
 }

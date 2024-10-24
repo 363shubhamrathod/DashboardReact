@@ -1,11 +1,46 @@
-.nearestEventDetails{
-    height: min-content;
-    width: 80%;
-    background-color: rgb(210, 223, 239);
-    padding: .5rem;
-    margin: .5rem;
-    border-radius: .5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgb(210, 223, 239);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.sideLine {
+  height: 100%;
+  width: 2px;
+  background-color: red;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nearestEventDetails {
+  margin-left: 1rem; /* Space between line and event details */
+}
+
+.eventInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.clockContainer {
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center icon vertically */
+  background-color: rgb(200, 210, 220); /* Darker background */
+  padding: 0.25rem; /* Add some padding */
+  border-radius: 0.25rem; /* Optional: add border radius for a softer look */
+}
+
+.clockIcon {
+  width: 1.5rem; /* Set width */
+  height: 1.5rem; /* Set height */
+  margin-right: 0.5rem; /* Space between icon and text */
+  color: #333; /* Optional: Change color for better contrast */
+}
+
+.eventInfo div {
+  color: gray; /* Change text color to gray */
 }

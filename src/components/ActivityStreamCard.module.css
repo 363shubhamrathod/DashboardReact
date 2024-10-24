@@ -1,4 +1,49 @@
-.MainDiv{
+.MainDiv {
     display: flex;
     flex-direction: column;
+    padding: 1rem; /* Added padding for breathing space */
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.userInfo {
+    display: flex;
+    align-items: center; /* Center aligns the items vertically */
+    margin-bottom: 1rem; /* Space between user info and activities */
+}
+
+.profilePic {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0.5rem; /* Space between image and user details */
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.userDetails {
+    color: #333; /* Darker color for better contrast */
+}
+
+.userRole {
+    color: gray; /* Lighter color for the role */
+}
+
+.activityItem {
+    background-color: rgb(210, 223, 239);
+    border-radius: 0.5rem;
+    margin: 0.5rem 0; /* Vertical margin for spacing */
+    padding: 0.5rem;
+    display: flex; /* Align icon and text */
+    align-items: center; /* Center align items vertically */
+    color: #333; /* Consistent text color */
+}
+
+.activityItem svg {
+    margin-right: 0.5rem; /* Space between icon and text */
 }

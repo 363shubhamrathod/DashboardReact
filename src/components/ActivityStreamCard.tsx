@@ -1,39 +1,27 @@
-import { CloudUpload,  Pin } from "lucide-react";
+import { CloudUpload, Pin } from "lucide-react";
 import classes from "./ActivityStreamCard.module.css";
+
 export default function ActivityStreamCard() {
   return (
     <div className={classes.MainDiv}>
-      <div style={{ display: "flex", justifyContent: "flex-start" }}>
-        <div
-          style={{
-            width: "3rem",
-            height: "3rem",
-            borderRadius: "50%",
-            backgroundColor: "yellow",
-            overflow: "hidden",
-          }}
-        >
+      <div className={classes.userInfo}>
+        <div className={classes.profilePic}>
           <img
             src="./download.png"
-            alt="image"
-            style={{
-              borderRadius: "50%",
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
+            alt="Profile of Oscar Holloway"
+            className={classes.image}
           />
         </div>
-        <div>
-          Oscar Holloway
+        <div className={classes.userDetails}>
+          <strong>Oscar Holloway</strong>
           <br />
-          UI/UX Designer
+          <span className={classes.userRole}>UI/UX Designer</span>
         </div>
       </div>
-      <div style={{backgroundColor:"rgb(210, 223, 239)",borderRadius:".5rem",margin:".5rem",padding:".5rem"}}>
+      <div className={classes.activityItem}>
         <CloudUpload /> Updated the status of mind map task to in progress
       </div>
-      <div style={{backgroundColor:"rgb(210, 223, 239)",borderRadius:".5rem",margin:".5rem",padding:".5rem"}}>
+      <div className={classes.activityItem}>
         <Pin /> Updated the status of mind map task to in progress
       </div>
     </div>
